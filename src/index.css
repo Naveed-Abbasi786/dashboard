@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family:Ibmp ;
+  src: url(../public/fonts/IBMPlexSans-VariableFont_wdth\,wght.ttf);
+}
