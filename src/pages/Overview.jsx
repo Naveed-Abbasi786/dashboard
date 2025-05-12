@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import React from "react";
 import { Avatar, ButtonIcon, Search, Sort } from "../assets";
-import { cardsData } from "../constant/data";
+import { OverViewcardsData } from "../constant/data";
 import LineChart from "../components/lineChart";
 import Doughnut from "../components/Doughnut";
 import Table from "../components/table";
@@ -44,7 +44,7 @@ export default function Overview() {
       </div>
 
       <div className="flex gap-2 flex-wrap justify-between mt-4">
-        {cardsData.map((card, idx) => (
+        {OverViewcardsData.map((card, idx) => (
           <div
             key={idx}
             className="bg-[#222230] flex flex-col justify-between w-[23%] h-[30vh] p-4 rounded-md text-white"

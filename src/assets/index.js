@@ -31,6 +31,25 @@ import listIcon from "../assets//img/icons/listIcon.svg";
 import veriorBanner from "../assets//img/veriorBanner.svg";
 import deleteIcon from "../assets//img/icons/deleteIcon.svg";
 import editIcon from "../assets//img/icons/editIcon.svg";
+import adsIcon from "../assets//img/icons/adsIcon.svg";
+import linkdinIcon from "../assets//img/icons/linkdinIcon.svg";
+import metaIcon from "../assets//img/icons/metaIcon.svg";
+import pintrestIcon from "../assets//img/icons/pintrestIcon.svg";
+import generateBanner from "../assets/img/generateBanner.svg";
+import insightIcon from "../assets/img/icons/insightIcon.svg";
+import correctIcon from "../assets/img/icons/correctIcon.svg";
+import linkIcon from "../assets/img/icons/linkIcon.svg";
+import map from "../assets/img/counrtyMap.svg";
+import us from "../assets/img/us.svg";
+import ind from "../assets/img/in.svg";
+import ca from "../assets/img/ca.svg";
+import au from "../assets/img/au.svg";
+
+
+
+
+
+
 
 
 
@@ -72,6 +91,19 @@ export const ListIcon = listIcon;
 export const VeriorBanner = veriorBanner;
 export const EditIcon = editIcon;
 export const DeleteIcon = deleteIcon;
+export const  AdsIcon= adsIcon;
+export const LinkdinIcon = linkdinIcon;
+export const PintrestIcon = pintrestIcon;
+export const MetaIcon = metaIcon;
+export const GenerateBanner = generateBanner;
+export const InsightIcon = insightIcon;
+export const CorrectIcon = correctIcon;
+export const LinkIcon = linkIcon;
+export const Map = map;
+export const Us = us;
+export const Ind = ind;
+export const Au = au;
+export const Ca = ca;
 
 
 

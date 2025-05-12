@@ -80,7 +80,7 @@ export default function DonutChart() {
   return (
     <div className="bg-[#1c1c2e] rounded-xl p-3 w-full h-[300px] !relative text-white">
       <Doughnut data={data} options={options} ref={chartRef} />
-      <h1 className='absolute top-28 left-52 text-2xl text-wrap w-[150px]'>Ad format distribution.</h1>
+      <h1 className='absolute top-28 left-64 text-2xl text-wrap w-[150px]'>Ad format distribution.</h1>
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-sm space-y-2">
         <div className="!absolute -top-2 -left-40 bg-[#2e2e3f]  px-5 p-2 rounded-md text-white text-[12px] font-medium">
           <span className="font-bold block">15%</span>

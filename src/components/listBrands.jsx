@@ -1,45 +1,10 @@
-import React from 'react';
-import {Avatar, DeleteIcon, EditIcon} from '../assets/index'; 
+import React from "react";
+import { Avatar, DeleteIcon, EditIcon } from "../assets/index";
+import { listBrandData } from "../constant/data";
 
 export default function ListBrands() {
-  const data = [
-    {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },
-      {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },  {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },  {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },  {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },
-    {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },
-  ];
-
   return (
-    <div className='w-full p-4'>
+    <div className="w-full p-4">
       {/* Table Header */}
       <div className="grid grid-cols-5 text-gray-300 text-sm border-b border-[#2c2c3c] pb-2">
         <span className="text-start">Brand Name</span>
@@ -50,7 +15,7 @@ export default function ListBrands() {
       </div>
 
       {/* Table Rows */}
-      {data.map((row, index) => (
+      {listBrandData.map((row, index) => (
         <div
           key={index}
           className={`grid grid-cols-5 items-center rounded-md my-1 px-2 text-sm text-white py-3 ${
@@ -74,14 +39,14 @@ export default function ListBrands() {
 
           {/* Action */}
           <div className="flex justify-start gap-2">
-                      <button className="flex items-center gap-2  bg-[#283d31] text-[#1F9254] px-4  py-2 rounded-lg text-sm ">
-                        <img src={EditIcon} alt="" className="w-4" />
-                        Edit
-                      </button>
-                      <button className="flex items-center gap-2 bg-[#3c2626] text-[#F35252] px-4 py-2 rounded-lg text-sm ">
-                        <img src={DeleteIcon} alt="" className="w-4" />
-                        Delete
-                      </button>
+            <button className="flex items-center gap-2  bg-[#283d31] text-[#1F9254] px-4  py-2 rounded-lg text-sm ">
+              <img src={EditIcon} alt="" className="w-4" />
+              Edit
+            </button>
+            <button className="flex items-center gap-2 bg-[#3c2626] text-[#F35252] px-4 py-2 rounded-lg text-sm ">
+              <img src={DeleteIcon} alt="" className="w-4" />
+              Delete
+            </button>
           </div>
         </div>
       ))}

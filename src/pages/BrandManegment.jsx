@@ -8,11 +8,10 @@ import {
   TagIcon,
   WorldIcon,
 } from "../assets";
-import BrandCards from '../components/brandCards'
+import BrandCards from "../components/brandCards";
+import { connetAccount } from "../constant/data";
 
 export default function BrandManegment() {
-  
-
   const [isFocused, setIsFocused] = useState(false);
   const [val, setVal] = useState("https://veriorinc.com/");
   return (
@@ -94,8 +93,8 @@ export default function BrandManegment() {
         </button>
       </div>
 
-{/* Cards */}
-      <BrandCards/>
+      {/* Cards */}
+      <BrandCards />
 
       <div className="bg-[#222230] mt-4 w-full rounded-md p-4 flex  justify-between items-center gap-4">
         <div className="flex gap-2 items-center">
@@ -110,7 +109,25 @@ export default function BrandManegment() {
         </button>
       </div>
 
+      <div className="grid grid-cols-2 w-full gap-3 items-center mt-4">
+        {connetAccount.map((val, idx) => (
+          <div
+            key={idx}
+            className="bg-[#2F2F3C] flex justify-between p-3 rounded-lg"
+          >
+            <div className="flex justify-center items-center text-white gap-2">
+              <div className="bg-[#2F2F3C]">
+                <img src={val.icon} alt="" className="" />
+              </div>
+              <h1>{val.name}</h1>
+            </div>
 
+            <button className="p-12 px-4  bg-[#e75050] text-gray-300 py-2 rounded-md transition-all duration-200">
+              Add Account Connect +
+            </button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

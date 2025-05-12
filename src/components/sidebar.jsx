@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Icon1, Icon10, Icon2, Icon9 } from "../assets";
 import { Icons, bottomNav } from "../constant/data.js";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
-export default function Sidebar({toggle,setToggle}) {
+export default function Sidebar({ toggle, setToggle }) {
   const sidebarRef = useRef(null);
   const navigate = useNavigate();
+  const location = useLocation(); // Track current URL
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -24,11 +25,14 @@ export default function Sidebar({toggle,setToggle}) {
     };
   }, [toggle]);
 
+  // Helper function to check if the current page is active
+  const isActivePage = (path) => location.pathname === path;
+
   return (
     <div
       ref={sidebarRef}
       className={`h-screen p-4 bg-[#14141f] flex flex-col justify-between transition-all duration-300 ${
-        toggle ? 'w-48' : 'w-16'
+        toggle ? "w-48" : "w-16"
       }`}
     >
       {/* Top Area */}
@@ -45,7 +49,9 @@ export default function Sidebar({toggle,setToggle}) {
 
         <button
           onClick={() => navigate("/dashboard")}
-          className="flex items-center gap-2 hover:bg-[#1f1f2e] p-2 rounded-md transition-all"
+          className={`flex items-center gap-2 hover:bg-[#1f1f2e] p-2 rounded-md transition-all ${
+            isActivePage("/dashboard") ? "bg-[#1f1f2e]" : ""
+          }`}
         >
           <img src={Icon2} alt="icon2" className="w-5 h-5" />
           {toggle && <span className="text-white text-sm">Dashboard</span>}
@@ -59,7 +65,7 @@ export default function Sidebar({toggle,setToggle}) {
               key={idx}
               onClick={() => navigate(item.path)}
               className={`flex items-center gap-3 p-2 rounded-md transition-all hover:bg-[#1f1f2e] ${
-                idx === 0 ? "bg-gray-600" : ""
+                isActivePage(item.path) ? "bg-[#1f1f2e]" : ""
               }`}
             >
               <img src={item.icon} alt={`icon-${idx}`} className="w-5 h-5" />
@@ -77,14 +83,14 @@ export default function Sidebar({toggle,setToggle}) {
           onClick={() => navigate("#")}
           className="flex items-center gap-3 p-2 rounded-md hover:bg-[#1f1f2e] transition-all"
         >
-          <img src={Icon9} alt={`bottom-icon`} className="w-5 h-7 " />
+          <img src={Icon9} alt="bottom-icon" className="w-5 h-7" />
           {toggle && <span className="text-white text-sm">Setting</span>}
         </button>
         <button
           onClick={() => navigate("#")}
           className="flex items-center gap-3 p-2 rounded-md hover:bg-[#1f1f2e] transition-all"
         >
-          <img src={Icon9} alt={`bottom-icon`} className="w-5 h-7 " />
+          <img src={Icon9} alt="bottom-icon" className="w-5 h-7" />
           {toggle && <span className="text-white text-sm">Setting</span>}
         </button>
         <button className="bg-[#3368b3] text-white rounded-md p-2 px-2">
