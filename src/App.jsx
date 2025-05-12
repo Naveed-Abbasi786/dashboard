@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import BrandList from "./pages/BrandList";
 function App() {
   const SignUp = lazy(() => import("./pages/SignUp"));
   const Login = lazy(() => import("./pages/Login"));
@@ -8,7 +8,7 @@ function App() {
   const Layout = lazy(() => import("./layout/index"));
   const Overview = lazy(() => import("./pages/Overview"));
   const BrandManegment = lazy(() => import("./pages/BrandManegment"));
-  const BrandList = lazy(() => import("./pages/BrandList"));
+  // const BrandList = lazy(() => import("./pages/BrandList"));
   const Generate = lazy(() => import("./pages/Generate"));
   const Insight = lazy(() => import("./pages/Insight"));
 
