@@ -1,5 +1,5 @@
 import React from 'react'
-import { Avatar, ButtonIcon, Search } from '../assets'
+import { Avatar, ButtonIcon, Search } from '../../assets'
 
 export default function Header({title,subTitle,btnTitle}) {
   return (

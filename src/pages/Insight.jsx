@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Header from "../components/header";
-import Header2 from "../components/header2";
+import Header from "../components/reusableComponents/header";
+import Header2 from "../components/reusableComponents/header2";
 import InsightCharts from '../components/insightCharts'
 import {
   CorrectIcon,
@@ -28,7 +28,7 @@ setActiveSection('insightCarts')
   }
 
   return (
-    <div className="w-full p-6">
+    <div className="">
 
       {activeSection === "cards" && (
         <>

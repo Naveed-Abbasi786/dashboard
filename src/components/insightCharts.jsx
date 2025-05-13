@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './header'
+import Header from './reusableComponents/header'
 import { Icon } from '@iconify/react/dist/iconify.js'
 import { insightcardsData } from '../constant/data'
 import { Sort } from '../assets'
@@ -9,10 +9,12 @@ import SocialChart from './socialChart'
 import SourceChart from './sourceChart'
 import CountryChart from './countryChart'
 import UserCountryChart from './userCountryChart'
+import { useNavigate } from 'react-router-dom'
 
 export default function InsightCharts() {
+  const navigate=useNavigate()
   return (
-    <div className='w-full p-6'>
+    <div className=''>
  <Header
         title="Insights"
         subTitle="Drive Performance and Insights Using Advanced Analytics"
@@ -38,10 +40,11 @@ export default function InsightCharts() {
             <div className="flex gap-2 flex-wrap justify-between mt-4">
               {insightcardsData.map((card, idx) => (
                 <div
+                onClick={()=>navigate("/insight-balance")}
                   key={idx}
                   className="bg-[#222230] flex flex-col justify-between w-[32%] h-[24vh] p-4 rounded-md text-white"
                 >
-                  <h5 className="w-max bg-[#2f2f3c] mb-2 px-2 py-1  text-left rounded text-sm">
+                  <h5  className="w-max bg-[#2f2f3c] mb-2 px-2 py-1  text-left rounded text-sm">
                     {card.title}
                   </h5>
       
@@ -86,7 +89,6 @@ export default function InsightCharts() {
                      <UserCountryChart/>
                     </div>
                   </div>
-      
     </div>
   )
 }

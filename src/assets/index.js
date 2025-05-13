@@ -44,6 +44,99 @@ import us from "../assets/img/us.svg";
 import ind from "../assets/img/in.svg";
 import ca from "../assets/img/ca.svg";
 import au from "../assets/img/au.svg";
+import bankBanner from "../assets/img/bankBanner.svg";
+import generatIcon from "../assets/img/icons/generatIcon.svg";
+
+import creativeIcon from "../assets/img/icons/creativeIcon.svg";
+import galleryUnActiveIcon from "../assets/img/icons/galleryUnActiveIcon.svg";
+import textUnActiveIcon from "../assets/img/icons/textUnActiveIcon.svg";
+import textIcon from "../assets/img/icons/textIcon.svg";
+import galleryIcon from "../assets/img/icons/galleryIcon.svg";
+import bulbIcon from "../assets/img/icons/bulbIcon.svg";
+import arrowLeft from "../assets/img/icons/arrowLeft.svg";
+import arrowDown from "../assets/img/icons/arrowDown.svg";
+import arrowUp from "../assets/img/icons/arrowUp.svg";
+import importPicIcon from "../assets/img/icons/importPicIcon.svg";
+
+import convert from "../assets/img/icons/convert.svg";
+import download from "../assets/img/icons/download.svg";
+import pen from "../assets/img/icons/pen.svg";
+import assetsBanner from "../assets/img/assetsBanner.svg";
+
+
+
+export const AssetsBanner =assetsBanner
+
+
+
+
+
+import halfPage from "../assets/img/icons/creativeSizes/halfPage.svg";
+import leaderboardL from "../assets/img/icons/creativeSizes/l-Leaderboard.svg";
+import landscape from "../assets/img/icons/creativeSizes/landscape.svg";
+import leaderboard from "../assets/img/icons/creativeSizes/leaderboard.svg";
+import medium from "../assets/img/icons/creativeSizes/medium.svg";
+import pin from "../assets/img/icons/creativeSizes/pin.svg";
+import portait from "../assets/img/icons/creativeSizes/portait.svg";
+import post from "../assets/img/icons/creativeSizes/post.svg";
+import story from "../assets/img/icons/creativeSizes/story.svg";
+import wideSkyscraper from "../assets/img/icons/creativeSizes/WideSkyscraper.svg";
+
+
+
+
+
+
+
+import ads from '../assets/img/icons/socialMedaiIcons/ads.svg'
+import fb from '../assets/img/icons/socialMedaiIcons/fb.svg'
+import insta from '../assets/img/icons/socialMedaiIcons/insta.svg'
+import linkd from '../assets/img/icons/socialMedaiIcons/linkd.svg'
+import pint from '../assets/img/icons/socialMedaiIcons/pint.svg'
+import x from '../assets/img/icons/socialMedaiIcons/x.svg'
+
+
+export const Ads =ads
+export const Fb =fb
+export const Instagram =insta
+export const Linkdin =linkd
+export const Pintrest =pint
+export const X =x
+
+
+
+export const Download =download
+export const Pen =pen
+export const Convert =convert
+
+
+
+
+
+
+
+
+
+
+export const HalfPage=halfPage
+export const LeaderboardL=leaderboardL
+export const Landscape=landscape
+export const Leaderboard=leaderboard
+export const Medium=medium
+export const Portait=portait
+export const Pin=pin
+export const Post=post
+export const Story=story
+export const WideSkyscraper=wideSkyscraper
+export const ImportPicIcon=importPicIcon
+
+
+
+
+
+
+
+
 
 
 
@@ -104,6 +197,23 @@ export const Us = us;
 export const Ind = ind;
 export const Au = au;
 export const Ca = ca;
+export const BankBanner = bankBanner;
+export const GeneratIcon = generatIcon;
+export const ArrowLeft = arrowLeft;
+export const ArrowDown = arrowDown;
+export const ArrowUp = arrowUp;
+
+
+export const CreativeActiveIcon = creativeIcon;
+export const TextActiveIcon = textIcon;
+export const TextUnActiveIcon = textUnActiveIcon;
+export const GalleryActiveIcon =galleryIcon;
+export const GalleryUnActiveIcon = galleryUnActiveIcon;
+export const BulbIcon = bulbIcon;
+
+
+
+
 
 
 

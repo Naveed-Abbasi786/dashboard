@@ -11,6 +11,9 @@ function App() {
   // const BrandList = lazy(() => import("./pages/BrandList"));
   const Generate = lazy(() => import("./pages/Generate"));
   const Insight = lazy(() => import("./pages/Insight"));
+  const InsightBalance = lazy(() => import("./pages/InsightBalance"));
+  const VisualAssest = lazy(() => import("./pages/VisualAssest"));
+
 
   return (
     <BrowserRouter>
@@ -28,6 +31,10 @@ function App() {
             <Route path="/brand-list" element={<BrandList />} />
             <Route path="/generate" element={<Generate />} />
             <Route path="/insight" element={<Insight />} />
+            <Route path="/insight-balance" element={<InsightBalance />} />
+            <Route path="/visual-assest" element={<VisualAssest />} />
+
+           
           </Route>
 
           {/* Standalone Pages (without Layout) */}

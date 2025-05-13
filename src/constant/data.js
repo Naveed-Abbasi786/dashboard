@@ -23,6 +23,29 @@ import {
   Us,
   Au,
   Ind,
+  BankBanner,
+  CreativeActiveIcon,
+  GalleryUnActiveIcon,
+  GalleryActiveIcon,
+  TextUnActiveIcon,
+  TextActiveIcon,
+  Post,
+  Landscape,
+  Story,
+  Portait,
+  Pin,
+  Medium,
+  Leaderboard,
+  WideSkyscraper,
+  HalfPage,
+  LeaderboardL,
+  Fb,
+  Instagram,
+  Ads,
+  Pintrest,
+  Linkdin,
+  X,
+  AssetsBanner,
 } from "../assets";
 
 export const Icons = [
@@ -94,41 +117,44 @@ export const brandData = [
   { id: "cta", logo: AddAction, title: "Add Call-to-Actions (optional)" },
 ];
 
- export const listBrandData = [
-    {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },
-      {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },  {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },  {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },  {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },
-    {
-      name: "Verior",
-      dis: 'Verior is a dynamic and innovative brand.',
-      date: '18-02-2025',
-      activity: "1 Week Ago",
-    },
-  ];
+export const listBrandData = [
+  {
+    name: "Verior",
+    dis: "Verior is a dynamic and innovative brand.",
+    date: "18-02-2025",
+    activity: "1 Week Ago",
+  },
+  {
+    name: "Verior",
+    dis: "Verior is a dynamic and innovative brand.",
+    date: "18-02-2025",
+    activity: "1 Week Ago",
+  },
+  {
+    name: "Verior",
+    dis: "Verior is a dynamic and innovative brand.",
+    date: "18-02-2025",
+    activity: "1 Week Ago",
+  },
+  {
+    name: "Verior",
+    dis: "Verior is a dynamic and innovative brand.",
+    date: "18-02-2025",
+    activity: "1 Week Ago",
+  },
+  {
+    name: "Verior",
+    dis: "Verior is a dynamic and innovative brand.",
+    date: "18-02-2025",
+    activity: "1 Week Ago",
+  },
+  {
+    name: "Verior",
+    dis: "Verior is a dynamic and innovative brand.",
+    date: "18-02-2025",
+    activity: "1 Week Ago",
+  },
+];
 export const gridBrandViews = [
   {
     banner: VeriorBanner,
@@ -205,7 +231,6 @@ export const generateCards = [
   },
 ];
 
-
 export const insightCards = [
   {
     banner: GenerateBanner,
@@ -221,8 +246,7 @@ export const insightCards = [
     banner: GenerateBanner,
     title: "Text Ads",
     dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
-  }
-  
+  },
 ];
 
 export const connetAccount = [
@@ -244,21 +268,29 @@ export const connetAccount = [
   },
 ];
 
-
-
-
-export const insigthPoints=[
-  {title:"Website Traffic Overview",subTitle:"Total visits and key metrics"},
-  {title:"Demographic Breakdown",subTitle:" Age and gender insights"},
-  {title:"Top Pages & Subdomains",subTitle:" High-performing sections revealed"},
-  {title:"Social Media Engagement",subTitle:" Most-used platforms analyzes"},
-  {title:"Traffic Sources",subTitle:"Origins of paid and organic visitors"},
-  {title:"Geographic Distribution",subTitle:"  Leading traffic regions and countries"},
-
-
-
-]
-
+export const insigthPoints = [
+  {
+    title: "Website Traffic Overview",
+    subTitle: "Total visits and key metrics",
+  },
+  { title: "Demographic Breakdown", subTitle: " Age and gender insights" },
+  {
+    title: "Top Pages & Subdomains",
+    subTitle: " High-performing sections revealed",
+  },
+  {
+    title: "Social Media Engagement",
+    subTitle: " Most-used platforms analyzes",
+  },
+  {
+    title: "Traffic Sources",
+    subTitle: "Origins of paid and organic visitors",
+  },
+  {
+    title: "Geographic Distribution",
+    subTitle: "  Leading traffic regions and countries",
+  },
+];
 
 export const insightcardsData = [
   {
@@ -281,8 +313,6 @@ export const insightcardsData = [
   },
 ];
 
-
-
 export const SocialChartsData = [
   { label: "Facebook", value: 100000, percentage: 70 },
   { label: "YouTube", value: 80000, percentage: 55 },
@@ -290,36 +320,111 @@ export const SocialChartsData = [
   { label: "LinkedIn", value: 2000, percentage: 20 },
 ];
 
-
-
-
 export const userCountry = [
   {
-    users: '134,24',
+    users: "134,24",
     percent: 80,
-    color: '#1A2D55',
-    countryName: 'United States',
+    color: "#1A2D55",
+    countryName: "United States",
     image: Us,
   },
   {
-    users: '25,34',
+    users: "25,34",
     percent: 50,
-    color: '#000066',
-    countryName: 'Australia',
+    color: "#000066",
+    countryName: "Australia",
     image: Au,
   },
   {
-    users: '35,344',
+    users: "35,344",
     percent: 65,
-    color: '#128807',
-    countryName: 'India',
+    color: "#128807",
+    countryName: "India",
     image: Ind,
   },
   {
-    users: '453,54',
+    users: "453,54",
     percent: 90,
-    color: '#D52B1E',
-    countryName: 'Canada',
+    color: "#D52B1E",
+    countryName: "Canada",
     image: Us,
   },
 ];
+
+export const inSightBankSelectOptions = [
+  {
+    buttonTitle: "All Regions & Countries",
+    options: ["Pakistan", "India", "USA", "UK"],
+  },
+  {
+    buttonTitle: "All Industries",
+    options: ["Tech", "Health", "Finance", "Education"],
+  },
+  {
+    buttonTitle: "All Platforms",
+    options: ["Instagram", "Facebook", "LinkedIn", "YouTube"],
+  },
+  {
+    buttonTitle: "All Types",
+    options: ["Paid", "Organic", "Boosted", "Sponsored"],
+  },
+];
+
+export const bankBanners = [
+  BankBanner,
+  BankBanner,
+  BankBanner,
+  BankBanner,
+  BankBanner,
+];
+
+
+
+ export const creative = [
+  {
+    activeIcon: CreativeActiveIcon,
+    unActiveIcon: CreativeActiveIcon, // fallback for first item
+    title: "Select Creative Size",
+    id: "creative"
+  },
+  {
+    activeIcon: TextActiveIcon,
+    unActiveIcon: TextUnActiveIcon,
+    title: "Text on Image",
+    id: "text"
+  },
+  {
+    activeIcon: GalleryActiveIcon,
+    unActiveIcon: GalleryUnActiveIcon,
+    title: "Add Background Image",
+    id: "background"
+  },
+  
+];
+
+
+
+  export const socialMediaSizes=[
+    {icon:Post,title:"Post Size",size:"(1080x1080)"},
+    {icon:Landscape,title:"Landscape Size",size:"(1200x628)"},
+    {icon:Story,title:"Story Size",size:"(1080x1920)"},
+    {icon:Portait,title:"Portrait Size",size:"(1080x1350)"},
+    {icon:Pin,title:"Pin",size:"(1000x1500)"},
+  ]
+
+
+
+export const displaySizes=[
+  {icon:Medium,title:"Medium Banner",size:"(300x250)"},
+  {icon:Leaderboard,title:"Leaderboard",size:"(728x90)"},
+  {icon:WideSkyscraper,title:"Wide Skyscraper",size:"(160x600)"},
+  {icon:HalfPage,title:"Half Page",size:"300x600"},
+  {icon:LeaderboardL,title:"L.Leaderboard",size:"(970x90)"},
+]
+
+
+export  const soicalMedia=[Fb,Instagram,Ads,Pintrest,Linkdin,X]
+
+
+
+export const  aIGeneratedAssets=[AssetsBanner,AssetsBanner,AssetsBanner]

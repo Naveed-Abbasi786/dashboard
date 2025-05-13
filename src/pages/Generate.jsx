@@ -1,11 +1,14 @@
 import React from 'react'
-import Header from '../components/header'
+import Header from '../components/reusableComponents/header'
+import Header2 from '../components/reusableComponents/header2'
 import { ButtonIcon } from '../assets'
 import { generateCards, gridBrandViews } from '../constant/data'
+import { useNavigate } from 'react-router-dom'
 
 export default function GeneratePage() {
+  const navigate=useNavigate()
   return (
-    <div className='w-full p-6'>
+    <div className=''>
 
       <Header title='Generate' subTitle='Manage and customize your brand in one place' btnTitle='Generate Now'/>
 
@@ -28,6 +31,7 @@ export default function GeneratePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-start mt-6">
                 {generateCards.map((item, idx) => (
                   <div
+                  onClick={()=>navigate("/visual-assest")}
                     key={idx}
                     className="bg-[#1e1e2f] rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
                   >
