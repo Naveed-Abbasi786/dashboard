@@ -46,6 +46,19 @@ import {
   Linkdin,
   X,
   AssetsBanner,
+  BgRemoveActive,
+  BgStyleActive,
+  BgRemoveUnactive,
+  BgStyleUnActive,
+  AiBg,
+  UploadProductActive,
+  UploadProductUnactive,
+  SelectActive,
+  SelectUnActive,
+  ProductVedioActive,
+  Resolution,
+  Option1,
+  Option2,
 } from "../assets";
 
 export const Icons = [
@@ -191,43 +204,20 @@ export const gridBrandViews = [
 export const generateCards = [
   {
     banner: GenerateBanner,
-    titile: "Photo Ads",
+    titile: "Marketing Visual Assets",
     dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
+   path:'/marketing-visual-assets'
   },
-  {
+   {
     banner: GenerateBanner,
-    titile: "Video Ads",
+    titile: "High-Impact Product Photography",
     dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
-  },
-  {
+   path:'/high-impact'
+  }, {
     banner: GenerateBanner,
-    titile: "Text Ads",
+    titile: "Engaging Product Video Showcases",
     dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
-  },
-  {
-    banner: GenerateBanner,
-    titile: "Carousal Ads",
-    dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
-  },
-  {
-    banner: GenerateBanner,
-    titile: "Creative Ads",
-    dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
-  },
-  {
-    banner: GenerateBanner,
-    titile: "Storytelling Ads",
-    dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
-  },
-  {
-    banner: GenerateBanner,
-    titile: "Social Creatives",
-    dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
-  },
-  {
-    banner: GenerateBanner,
-    titile: "Instant Ads",
-    dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
+   path:'/engaging-product'
   },
 ];
 
@@ -428,3 +418,95 @@ export  const soicalMedia=[Fb,Instagram,Ads,Pintrest,Linkdin,X]
 
 
 export const  aIGeneratedAssets=[AssetsBanner,AssetsBanner,AssetsBanner]
+
+
+
+
+ export const highImpact = [
+  {
+    activeIcon: CreativeActiveIcon,
+    unActiveIcon: CreativeActiveIcon, 
+    title: "Select Creative Size",
+    id: "creative"
+  },
+  {
+    activeIcon: BgRemoveActive,
+    unActiveIcon: BgRemoveUnactive,
+    title: "Background Removal",
+    id: "removal"
+  },
+  {
+    activeIcon: BgStyleActive,
+    unActiveIcon: BgStyleUnActive,
+    title: "AI Background Styles",
+    id: "background"
+  },
+  
+]
+
+
+export const monoChrome=[
+  {title:"Dusty Prink Background",image:AiBg},
+  {title:"Dusty Prink Background",image:AiBg},
+  {title:"Dusty Prink Background",image:AiBg},
+  {title:"Dusty Prink Background",image:AiBg},
+  {title:"Dusty Prink Background",image:AiBg},
+  {title:"Dusty Prink Background",image:AiBg},
+  {title:"Dusty Prink Background",image:AiBg},
+
+
+]
+
+
+
+export const engagingProdut = [
+  {
+    activeIcon: ProductVedioActive,
+    unActiveIcon: ProductVedioActive, 
+    title: "Product Video Ratio",
+    id: "product"
+  },
+  {
+    activeIcon: UploadProductActive,
+    unActiveIcon: UploadProductUnactive,
+    title: "Upload Product Photo",
+    id: "upload"
+  },
+  {
+    activeIcon: SelectActive,
+    unActiveIcon: SelectUnActive,
+    title: "Select Creation Mode",
+    id: "selected"
+  },
+  
+]
+
+
+
+
+export const advanceOptions = [
+  {
+    title: "Resolution",
+    dis: "Select the output resolution — higher resolutions may increase rendering time.",
+    icon: Resolution,
+    optionIcon: Option1,
+    options: ["1003hp", "93203hp", "1212px"],
+    optionTitle: "10 Sec",
+  },
+  {
+    title: "Video Length",
+    dis: "Select the video length — longer durations may increase rendering time.",
+    icon: Resolution,
+    optionIcon: Option2,
+    options: ["5 Sec", "10 Sec", "15 Sec"],
+    optionTitle: "10 Sec",
+  },
+    {
+    title: "Camera Motion",
+    dis: "Select the video length — longer durations may increase rendering time.",
+    icon: Resolution,
+    optionIcon: Option2,
+    options: ["5 Sec", "10 Sec", "15 Sec"],
+    optionTitle: "10 Sec",
+  },
+];

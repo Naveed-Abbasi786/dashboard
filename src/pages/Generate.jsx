@@ -31,7 +31,7 @@ export default function GeneratePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-start mt-6">
                 {generateCards.map((item, idx) => (
                   <div
-                  onClick={()=>navigate("/visual-assest")}
+                  onClick={()=>navigate(item.path)}
                     key={idx}
                     className="bg-[#1e1e2f] rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
                   >

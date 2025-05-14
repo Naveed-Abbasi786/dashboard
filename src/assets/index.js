@@ -62,10 +62,53 @@ import convert from "../assets/img/icons/convert.svg";
 import download from "../assets/img/icons/download.svg";
 import pen from "../assets/img/icons/pen.svg";
 import assetsBanner from "../assets/img/assetsBanner.svg";
+import aiBg from "../assets/img/aiBg.svg";
+
+
+// engagingProducts
+import engaging from "../assets/img/icons/generatePagesIcons/engagingProduct/engaging.svg";
+import productVedioActive from "../assets/img/icons/generatePagesIcons/engagingProduct/productVedioActive.svg";
+import selectActive from "../assets/img/icons/generatePagesIcons/engagingProduct/SelectActive.svg";
+import selectUnActive from "../assets/img/icons/generatePagesIcons/engagingProduct/selectUnActive.svg";
+import uploadProductActive from "../assets/img/icons/generatePagesIcons/engagingProduct/uploadProductActive.svg";
+import uploadProductUnactive from "../assets/img/icons/generatePagesIcons/engagingProduct/uploadProductUnactive.svg";
+import port from "../assets/img/icons/generatePagesIcons/engagingProduct/portait.svg";
+import productImage from "../assets/img/icons/generatePagesIcons/engagingProduct/product.svg";
+import productImage2 from "../assets/img/icons/generatePagesIcons/engagingProduct/product2.svg";
+import aiDriven from "../assets/img/icons/generatePagesIcons/engagingProduct/aiDriven.svg";
+import aiDriven2 from "../assets/img/icons/generatePagesIcons/engagingProduct/aiDriven2.svg";
+import resolution from "../assets/img/icons/generatePagesIcons/engagingProduct/resolution.svg";
+import option1 from "../assets/img/icons/generatePagesIcons/engagingProduct/option1.svg";
+import option2 from "../assets/img/icons/generatePagesIcons/engagingProduct/option1.svg";
 
 
 
-export const AssetsBanner =assetsBanner
+
+
+export  const Engaging=engaging
+export  const ProductVedioActive=productVedioActive
+export  const SelectActive=selectActive
+export  const SelectUnActive=selectUnActive
+export  const UploadProductActive=uploadProductActive
+export  const UploadProductUnactive=uploadProductUnactive
+export  const Port=port
+export  const ProductImage=productImage
+export  const ProductImage2=productImage2
+export  const AiDriven=aiDriven
+export  const AiDriven2=aiDriven2
+export  const Resolution=resolution
+export  const Option1=option1
+export  const Option2=option2
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -96,6 +139,53 @@ import pint from '../assets/img/icons/socialMedaiIcons/pint.svg'
 import x from '../assets/img/icons/socialMedaiIcons/x.svg'
 
 
+import highImpact from '../assets/img/icons/generatePagesIcons/hightImpact/hightImpactActive.svg'
+import bgRemoveActive from '../assets/img/icons/generatePagesIcons/hightImpact/bgRemoveActive.svg'
+import bgRemoveUnactive from '../assets/img/icons/generatePagesIcons/hightImpact/bgRemoveUnactive.svg'
+import bgStyleActive from '../assets/img/icons/generatePagesIcons/hightImpact/bgStyleActive.svg'
+import bgStyleUnActive from '../assets/img/icons/generatePagesIcons/hightImpact/bgStyleUnActive.svg'
+import creativeActive from '../assets/img/icons/generatePagesIcons/hightImpact/creativeActive.svg'
+import correct from '../assets/img/icons/generatePagesIcons/hightImpact/correct.svg'
+import wrong from '../assets/img/icons/generatePagesIcons/hightImpact/wrong.svg'
+
+import presetStyle from '../assets/img/icons/generatePagesIcons/hightImpact/presetSttyle.svg'
+import styleMatch from '../assets/img/icons/generatePagesIcons/hightImpact/styleMatch.svg'
+import customStyle from '../assets/img/icons/generatePagesIcons/hightImpact/customStyle.svg'
+import prest from '../assets/img/icons/generatePagesIcons/hightImpact/prest.svg'
+import selected from '../assets/img/icons/generatePagesIcons/hightImpact/selected.svg'
+import dustbin from '../assets/img/icons/dustbin.svg'
+
+
+
+
+
+
+
+
+export const HighImpact=highImpact
+export const BgRemoveActive=bgRemoveActive
+export const BgRemoveUnactive=bgRemoveUnactive
+
+export const BgStyleActive=bgStyleActive
+export const BgStyleUnActive=bgStyleUnActive
+export const CreativeActive=creativeActive
+export const Correct=correct
+export const Wrong=wrong
+export const PresetStyle=presetStyle
+export const CustomStyle=customStyle
+export const StyleMatch=styleMatch
+export const Prest=prest
+export const Selected=selected
+
+
+
+
+
+
+
+
+
+
 export const Ads =ads
 export const Fb =fb
 export const Instagram =insta
@@ -113,11 +203,7 @@ export const Convert =convert
 
 
 
-
-
-
-
-
+export const AssetsBanner =assetsBanner
 export const HalfPage=halfPage
 export const LeaderboardL=leaderboardL
 export const Landscape=landscape
@@ -211,6 +297,8 @@ export const GalleryActiveIcon =galleryIcon;
 export const GalleryUnActiveIcon = galleryUnActiveIcon;
 export const BulbIcon = bulbIcon;
 
+export  const Dustbin =dustbin
+export  const AiBg =aiBg
 
 
 

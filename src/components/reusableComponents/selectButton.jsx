@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Avatar } from '../../assets';
 
-export default function SelectButton({ buttonTitle = "Select a Brand Tone", options = [] ,style = "" }) {
+export default function SelectButton({ buttonTitle = "Select a Brand Tone", options = [] ,style = "",icon }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState(null);
 
@@ -18,8 +19,14 @@ export default function SelectButton({ buttonTitle = "Select a Brand Tone", opti
       {/* Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-className={`flex justify-between items-center bg-[#222230] w-full rounded-md border border-gray-700 ${style ? style : "px-4 py-2"} text-sm font-medium text-gray-300 shadow-sm "`}
+className={`flex  !justify-between items-center bg-[#222230] w-full rounded-md border border-gray-700 ${style ? style : "px-4 py-2"} text-sm font-medium text-gray-300 shadow-sm "`}
       >
+        {/* <div className='flex justify-between items-center'> */}
+
+{/*        
+        {icon&&(
+          <img src={icon} alt="" className='w-6' />
+        )} */}
         {selected || buttonTitle}
         <svg
           className="ml-2 h-5 w-5"
@@ -33,6 +40,7 @@ className={`flex justify-between items-center bg-[#222230] w-full rounded-md bor
             clipRule="evenodd"
           />
         </svg>
+         {/* </div> */}
       </button>
 
       {/* Dropdown */}

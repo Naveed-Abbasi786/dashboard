@@ -2,7 +2,7 @@
 import React from "react";
 import { ImportPicIcon } from "../../assets";
 
-export default function ImageUploader({ images, setImages }) {
+export default function ImageUploader({ images, setImages,style = "" }) {
   const handleImageUpload = (e) => {
     let files = Array.from(e.target.files);
     if (images.length + files.length > 5) {
@@ -31,7 +31,7 @@ export default function ImageUploader({ images, setImages }) {
     <div className="w-full">
       {/* Drop Zone */}
       <div
-        className="border-2 border-dashed h-[300px] border-gray-600 p-8 rounded-md bg-[#222230] text-gray-300 text-center cursor-pointer hover:border-gray-400 transition-all duration-300"
+        className={`border-2 border-dashed h-[300px] border-gray-600 p-8 rounded-md ${style?style:'bg-[#2f2f3c]'}  text-gray-300 text-center cursor-pointer hover:border-gray-400 transition-all duration-300`}
         onClick={() => document.getElementById("imageInput").click()}
         onDragOver={(e) => e.preventDefault()}
         onDrop={handleDrop}
