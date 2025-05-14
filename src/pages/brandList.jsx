@@ -10,7 +10,7 @@ import {
 import ListBrands from "../components/listBrands";
 import BrandGrid from "../components/brandGrid";
 
-export default function BrandList() {
+const  BrandList = () => {
 
 const [isGrid, setisGrid] = useState(true);
 const [islist, setIsList] = useState(false);
@@ -94,3 +94,5 @@ const handleList = () => {
     </div>
   );
 }
+
+export default BrandList
