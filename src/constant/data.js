@@ -59,6 +59,26 @@ import {
   Resolution,
   Option1,
   Option2,
+  StockSizeActive,
+  StockStyleActive,
+  StockStyleUnActive,
+  DiscribeActive,
+  DiscribeUnActive,
+  SquareVs,
+  LandscapeVs,
+  StoryVs,
+  PortaitVs,
+  PinVs,
+  ProductPhotoUnActive,
+  ProductPhotoActive,
+  WriteActive,
+  WriteUnActive,
+  ResolutionPR,
+  SquarePR,
+  LandPR,
+  PortPr,
+  StyoryPr,
+  CreativeActive,
 } from "../assets";
 
 export const Icons = [
@@ -206,18 +226,43 @@ export const generateCards = [
     banner: GenerateBanner,
     titile: "Marketing Visual Assets",
     dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
-   path:'/marketing-visual-assets'
+    path: "/marketing-visual-assets",
   },
-   {
+  {
     banner: GenerateBanner,
     titile: "High-Impact Product Photography",
     dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
-   path:'/high-impact'
-  }, {
+    path: "/high-impact",
+  },
+  {
     banner: GenerateBanner,
     titile: "Engaging Product Video Showcases",
     dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
-   path:'/engaging-product'
+    path: "/engaging-product",
+  },
+  {
+    banner: GenerateBanner,
+    titile: "Curated Visual Library",
+    dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
+    path: "/visual-libray",
+  },
+  {
+    banner: GenerateBanner,
+    titile: "Persuasive Ad Copywriting",
+    dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
+    path: "/copy-writing",
+  },
+  {
+    banner: GenerateBanner,
+    titile: "Performance-Driven Video Ads",
+    dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
+    path: "/perfomance-driven",
+  },
+    {
+    banner: GenerateBanner,
+    titile: "Social Media Visuals",
+    dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
+    path: "/soical-media-visuals",
   },
 ];
 
@@ -368,121 +413,98 @@ export const bankBanners = [
   BankBanner,
 ];
 
-
-
- export const creative = [
+export const creative = [
   {
     activeIcon: CreativeActiveIcon,
     unActiveIcon: CreativeActiveIcon, // fallback for first item
     title: "Select Creative Size",
-    id: "creative"
+    id: "creative",
   },
   {
     activeIcon: TextActiveIcon,
     unActiveIcon: TextUnActiveIcon,
     title: "Text on Image",
-    id: "text"
+    id: "text",
   },
   {
     activeIcon: GalleryActiveIcon,
     unActiveIcon: GalleryUnActiveIcon,
     title: "Add Background Image",
-    id: "background"
+    id: "background",
   },
-  
 ];
 
+export const socialMediaSizes = [
+  { icon: Post, title: "Post Size", size: "(1080x1080)" },
+  { icon: Landscape, title: "Landscape Size", size: "(1200x628)" },
+  { icon: Story, title: "Story Size", size: "(1080x1920)" },
+  { icon: Portait, title: "Portrait Size", size: "(1080x1350)" },
+  { icon: Pin, title: "Pin", size: "(1000x1500)" },
+];
 
+export const displaySizes = [
+  { icon: Medium, title: "Medium Banner", size: "(300x250)" },
+  { icon: Leaderboard, title: "Leaderboard", size: "(728x90)" },
+  { icon: WideSkyscraper, title: "Wide Skyscraper", size: "(160x600)" },
+  { icon: HalfPage, title: "Half Page", size: "300x600" },
+  { icon: LeaderboardL, title: "L.Leaderboard", size: "(970x90)" },
+];
 
-  export const socialMediaSizes=[
-    {icon:Post,title:"Post Size",size:"(1080x1080)"},
-    {icon:Landscape,title:"Landscape Size",size:"(1200x628)"},
-    {icon:Story,title:"Story Size",size:"(1080x1920)"},
-    {icon:Portait,title:"Portrait Size",size:"(1080x1350)"},
-    {icon:Pin,title:"Pin",size:"(1000x1500)"},
-  ]
+export const soicalMedia = [Fb, Instagram, Ads, Pintrest, Linkdin, X];
 
+export const aIGeneratedAssets = [AssetsBanner, AssetsBanner, AssetsBanner];
 
-
-export const displaySizes=[
-  {icon:Medium,title:"Medium Banner",size:"(300x250)"},
-  {icon:Leaderboard,title:"Leaderboard",size:"(728x90)"},
-  {icon:WideSkyscraper,title:"Wide Skyscraper",size:"(160x600)"},
-  {icon:HalfPage,title:"Half Page",size:"300x600"},
-  {icon:LeaderboardL,title:"L.Leaderboard",size:"(970x90)"},
-]
-
-
-export  const soicalMedia=[Fb,Instagram,Ads,Pintrest,Linkdin,X]
-
-
-
-export const  aIGeneratedAssets=[AssetsBanner,AssetsBanner,AssetsBanner]
-
-
-
-
- export const highImpact = [
+export const highImpact = [
   {
     activeIcon: CreativeActiveIcon,
-    unActiveIcon: CreativeActiveIcon, 
+    unActiveIcon: CreativeActiveIcon,
     title: "Select Creative Size",
-    id: "creative"
+    id: "creative",
   },
   {
     activeIcon: BgRemoveActive,
     unActiveIcon: BgRemoveUnactive,
     title: "Background Removal",
-    id: "removal"
+    id: "removal",
   },
   {
     activeIcon: BgStyleActive,
     unActiveIcon: BgStyleUnActive,
     title: "AI Background Styles",
-    id: "background"
+    id: "background",
   },
-  
-]
+];
 
-
-export const monoChrome=[
-  {title:"Dusty Prink Background",image:AiBg},
-  {title:"Dusty Prink Background",image:AiBg},
-  {title:"Dusty Prink Background",image:AiBg},
-  {title:"Dusty Prink Background",image:AiBg},
-  {title:"Dusty Prink Background",image:AiBg},
-  {title:"Dusty Prink Background",image:AiBg},
-  {title:"Dusty Prink Background",image:AiBg},
-
-
-]
-
-
+export const monoChrome = [
+  { title: "Dusty Prink Background", image: AiBg },
+  { title: "Dusty Prink Background", image: AiBg },
+  { title: "Dusty Prink Background", image: AiBg },
+  { title: "Dusty Prink Background", image: AiBg },
+  { title: "Dusty Prink Background", image: AiBg },
+  { title: "Dusty Prink Background", image: AiBg },
+  { title: "Dusty Prink Background", image: AiBg },
+];
 
 export const engagingProdut = [
   {
     activeIcon: ProductVedioActive,
-    unActiveIcon: ProductVedioActive, 
+    unActiveIcon: ProductVedioActive,
     title: "Product Video Ratio",
-    id: "product"
+    id: "product",
   },
   {
     activeIcon: UploadProductActive,
     unActiveIcon: UploadProductUnactive,
     title: "Upload Product Photo",
-    id: "upload"
+    id: "upload",
   },
   {
     activeIcon: SelectActive,
     unActiveIcon: SelectUnActive,
     title: "Select Creation Mode",
-    id: "selected"
+    id: "selected",
   },
-  
-]
-
-
-
+];
 
 export const advanceOptions = [
   {
@@ -501,12 +523,206 @@ export const advanceOptions = [
     options: ["5 Sec", "10 Sec", "15 Sec"],
     optionTitle: "10 Sec",
   },
-    {
+  {
     title: "Camera Motion",
     dis: "Select the video length — longer durations may increase rendering time.",
     icon: Resolution,
     optionIcon: Option2,
     options: ["5 Sec", "10 Sec", "15 Sec"],
     optionTitle: "10 Sec",
+  },
+];
+
+// Vs
+
+export const visualLibrary = [
+  {
+    activeIcon: StockSizeActive,
+    unActiveIcon: StockSizeActive,
+    title: "Stock Image Size",
+    id: "size",
+  },
+  {
+    activeIcon: StockStyleActive,
+    unActiveIcon: StockStyleUnActive,
+    title: "Stock Image Style",
+    id: "style",
+  },
+  {
+    activeIcon: DiscribeActive,
+    unActiveIcon: DiscribeUnActive,
+    title: "Describe Your Image",
+    id: "describe",
+  },
+];
+
+export const stockImageSizes = [
+  {
+    icon: SquareVs,
+    title: "Square Image",
+    size: "1:1 ratio, perfect to be used in square social media posts.",
+  },
+  {
+    icon: LandscapeVs,
+    title: "Landscape Image",
+    size: "16:9 ratio, ideal for landscape-oriented content across various platforms.",
+  },
+  {
+    icon: StoryVs,
+    title: "Story Image",
+    size: "9:16 ratio, best suited to be used in stories, reels, and any vertical content.",
+  },
+  {
+    icon: PortaitVs,
+    title: "Portrait Image",
+    size: "4:5 ratio, well-matched for social media feeds where vertical space isfavored.",
+  },
+  {
+    icon: PinVs,
+    title: "Pin Image",
+    size: "2:3 ratio, excellent for Pinterest content and to be used in any vertical content.",
+  },
+];
+
+export const aiRecommendation = [
+  {
+    title: "Photorealistic",
+    dis: "Realistic stock images with high detail and clarity.",
+    image: AiBg,
+  },
+  {
+    title: "Photorealistic",
+    dis: "Realistic stock images with high detail and clarity.",
+    image: AiBg,
+  },
+  {
+    title: "Photorealistic",
+    dis: "Realistic stock images with high detail and clarity.",
+    image: AiBg,
+  },
+  {
+    title: "Photorealistic",
+    dis: "Realistic stock images with high detail and clarity.",
+    image: AiBg,
+  },
+  {
+    title: "Photorealistic",
+    dis: "Realistic stock images with high detail and clarity.",
+    image: AiBg,
+  },
+  {
+    title: "Photorealistic",
+    dis: "Realistic stock images with high detail and clarity.",
+    image: AiBg,
+  },
+  {
+    title: "Photorealistic",
+    dis: "Realistic stock images with high detail and clarity.",
+    image: AiBg,
+  },
+  {
+    title: "Photorealistic",
+    dis: "Realistic stock images with high detail and clarity.",
+    image: AiBg,
+  },
+];
+
+export const aIGeneratedAdTexts = [
+  {
+    title:
+      "SUCCESs Method: Simple-Unexpected-Concrete-Credible-Emotional-Story Style …",
+    p1: "Verior transforms business operations into seamless symphonies of efficiency. 🎵",
+    p2: "Imagine a platform that not only manages tasks but also elevates teamwork and tracks progress in real-time. With Verior, experience unparalleled productivity. 📈",
+    p3: "Our customizable dashboards and advanced reporting tools bring clarity and insight, whil seamless integration with existing software ensures nothing disrupts your workflow.🔍",
+    p4: "Trusted by professionals, Verior adapts from small startups to large enterprises, helping businesses achieve their goals with precision and ease. 🤝",
+    p5: "Discover how Verior can lead your business to new heights. Get started today and watch your productivity soar. Get Leads.",
+  },
+  {
+    title:
+      "SUCCESs Method: Simple-Unexpected-Concrete-Credible-Emotional-Story Style …",
+    p1: "Verior transforms business operations into seamless symphonies of efficiency. 🎵",
+    p2: "Imagine a platform that not only manages tasks but also elevates teamwork and tracks progress in real-time. With Verior, experience unparalleled productivity. 📈",
+    p3: "Our customizable dashboards and advanced reporting tools bring clarity and insight, whil seamless integration with existing software ensures nothing disrupts your workflow.🔍",
+    p4: "Trusted by professionals, Verior adapts from small startups to large enterprises, helping businesses achieve their goals with precision and ease. 🤝",
+    p5: "Discover how Verior can lead your business to new heights. Get started today and watch your productivity soar. Get Leads.",
+  },
+  {
+    title:
+      "SUCCESs Method: Simple-Unexpected-Concrete-Credible-Emotional-Story Style …",
+    p1: "Verior transforms business operations into seamless symphonies of efficiency. 🎵",
+    p2: "Imagine a platform that not only manages tasks but also elevates teamwork and tracks progress in real-time. With Verior, experience unparalleled productivity. 📈",
+    p3: "Our customizable dashboards and advanced reporting tools bring clarity and insight, whil seamless integration with existing software ensures nothing disrupts your workflow.🔍",
+    p4: "Trusted by professionals, Verior adapts from small startups to large enterprises, helping businesses achieve their goals with precision and ease. 🤝",
+    p5: "Discover how Verior can lead your business to new heights. Get started today and watch your productivity soar. Get Leads.",
+  },
+  {
+    title:
+      "SUCCESs Method: Simple-Unexpected-Concrete-Credible-Emotional-Story Style …",
+    p1: "Verior transforms business operations into seamless symphonies of efficiency. 🎵",
+    p2: "Imagine a platform that not only manages tasks but also elevates teamwork and tracks progress in real-time. With Verior, experience unparalleled productivity. 📈",
+    p3: "Our customizable dashboards and advanced reporting tools bring clarity and insight, whil seamless integration with existing software ensures nothing disrupts your workflow.🔍",
+    p4: "Trusted by professionals, Verior adapts from small startups to large enterprises, helping businesses achieve their goals with precision and ease. 🤝",
+    p5: "Discover how Verior can lead your business to new heights. Get started today and watch your productivity soar. Get Leads.",
+  },
+];
+
+// Perfomace
+
+export const perfomanceDriven = [
+  {
+    activeIcon: ResolutionPR,
+    unActiveIcon: ResolutionPR,
+    title: "Select Style & Resolution",
+    id: "size",
+  },
+  {
+    activeIcon: ProductPhotoActive,
+    unActiveIcon: ProductPhotoUnActive,
+    title: "Upload Product Photo",
+    id: "upload",
+  },
+  {
+    activeIcon: WriteActive,
+    unActiveIcon: WriteUnActive,
+    title: "Describe Your Image",
+    id: "write",
+  },
+];
+
+export const creativeResolutionSizes = [
+  { icon: SquarePR, title: "Square Video", size: "(1080x1080)" },
+  { icon: LandPR, title: "Landscape Video", size: "(1920x1080)" },
+  { icon: PortPr, title: "Portrait Video", size: "(160x600)" },
+  { icon: StyoryPr, title: "Story Video", size: "(1080x1920)" },
+];
+
+export const aIGeneratedAdVideos = [
+  "https://videocdn.cdnpk.net/videos/e13dd65c-c648-45b8-9f1f-b67267ce1157/horizontal/previews/clear/large.mp4?token=exp=1747311182~hmac=ee2bc82a4609a44e4c1d9e2996202848f096f8222c4f15a77ec999356351e45e",
+  "https://videocdn.cdnpk.net/videos/e13dd65c-c648-45b8-9f1f-b67267ce1157/horizontal/previews/clear/large.mp4?token=exp=1747311182~hmac=ee2bc82a4609a44e4c1d9e2996202848f096f8222c4f15a77ec999356351e45e",
+];
+
+
+
+
+// Social Media visuals
+
+export const soicalMediaVisual = [
+  {
+    activeIcon: CreativeActiveIcon,
+    unActiveIcon: CreativeActive,
+    title: "Select Creative Size",
+    id: "size",
+  },
+  {
+    activeIcon: TextActiveIcon,
+    unActiveIcon: TextUnActiveIcon,
+    title: "Text on Image",
+    id: "text",
+  },
+  {
+    activeIcon: GalleryActiveIcon,
+    unActiveIcon: GalleryUnActiveIcon,
+    title: "Add Background Image",
+    id: "background",
   },
 ];

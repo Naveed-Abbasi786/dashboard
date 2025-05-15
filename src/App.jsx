@@ -1,6 +1,5 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import BrandList from "./pages/BrandList";
 
 function App() {
   const SignUp = lazy(() => import("./pages/SignUp"));
@@ -8,6 +7,7 @@ function App() {
   const Otp = lazy(() => import("./pages/Otp"));
   const Layout = lazy(() => import("./layout/index"));
   const Overview = lazy(() => import("./pages/Overview"));
+  const BrandList = lazy(() => import("./pages/BrandList"));
   const BrandManegment = lazy(() => import("./pages/BrandManegment"));
   const Generate = lazy(() => import("./pages/Generate"));
   const Insight = lazy(() => import("./pages/Insight"));
@@ -15,7 +15,12 @@ function App() {
   const MarketingVisualAssets = lazy(() => import("./pages/generatePages/MarketingVisualAssets"));
   const HighImpact = lazy(() => import("./pages/generatePages/HighImpact"));
   const EngagingProduct = lazy(() => import("./pages/generatePages/EngagingProduct"));
+  const VisualLibrary = lazy(() => import("./pages/generatePages/VisualLibrary"));
+  const CopyWriting = lazy(() => import("./pages/generatePages/CopyWriting"));
+  const PerfomanceDriven = lazy(() => import("./pages/generatePages/PerfomanceDriven"));
+  const SoicalMediaVisual = lazy(() => import("./pages/generatePages/SoicalMediaVisual"));
 
+ 
   const routes = [
     { path: "/", element: <Overview />, index: true },
     { path: "/brand-menegment", element: <BrandManegment /> },
@@ -26,6 +31,10 @@ function App() {
     { path: "/marketing-visual-assets", element: <MarketingVisualAssets /> },
     { path: "/high-impact", element: <HighImpact /> },
     { path: "/engaging-product", element: <EngagingProduct /> },
+    { path: "/visual-libray", element: <VisualLibrary /> },
+    { path: "/copy-writing", element: <CopyWriting /> },
+    { path: "/perfomance-driven", element: <PerfomanceDriven /> },
+    { path: "/soical-media-visuals", element: <SoicalMediaVisual /> },
 
   ];
 
