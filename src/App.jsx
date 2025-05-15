@@ -7,7 +7,7 @@ function App() {
   const Otp = lazy(() => import("./pages/Otp"));
   const Layout = lazy(() => import("./layout/index"));
   const Overview = lazy(() => import("./pages/Overview"));
-  const BrandList = lazy(() => import("./pages/BrandList"));
+  // const BrandList = lazy(() => import("./pages/BrandList"));
   const BrandManegment = lazy(() => import("./pages/BrandManegment"));
   const Generate = lazy(() => import("./pages/Generate"));
   const Insight = lazy(() => import("./pages/Insight"));
@@ -24,7 +24,7 @@ function App() {
   const routes = [
     { path: "/", element: <Overview />, index: true },
     { path: "/brand-menegment", element: <BrandManegment /> },
-    { path: "/brand-list", element: <BrandList /> },
+    // { path: "/brand-list", element: <BrandList /> },
     { path: "/generate", element: <Generate /> },
     { path: "/insight", element: <Insight /> },
     { path: "/insight-balance", element: <InsightBalance /> },
