@@ -102,7 +102,8 @@ import landscapeVs from "../assets/img/icons/visualLibrary/landscape.svg";
 import pinVs from "../assets/img/icons/visualLibrary/pin.svg";
 import portaitVs from "../assets/img/icons/visualLibrary/portait.svg";
 import squareVs from "../assets/img/icons/visualLibrary/square.svg";
-import stockSizeActive from "../assets/img/icons/visualLibrary/StockSizeActive.svg";
+
+import stockSizeActive from "../assets/img/icons/visualLibrary/stockSizeActive.svg";
 import stockStyleUnActive from "../assets/img/icons/visualLibrary/stockStyleUnActive.svg";
 import stockStyleActive from "../assets/img/icons/visualLibrary/stockStyleActive.svg";
 import storyVs from "../assets/img/icons/visualLibrary/story.svg";
