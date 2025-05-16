@@ -4,56 +4,41 @@ import Header2 from "../../components/reusableComponents/header2";
 import {
   BulbIcon,
   Convert,
-  StockSizeActive,
-  StockStyleActive,
-  VisualLibrary,
-  GalleryActiveIcon,
-  SelectActive,
-  Perfomance,
-  ResolutionPR,
-  ProductVedio,
-  ProductVedio2,
-  ProductPhotoActive,
   WriteActive,
   WorldIcon,
   SettingIcon,
   ArrowLeft,
   ArrowUp,
-  Pk,
   Pen,
   Download,
-  PauseIcon,
-  PlayIcon,
-  Sound,
   SocialMediaVisualIcon,
+  ResolutionPR,
+  TextActiveIcon,
 } from "../../assets";
 import {
-  aIGeneratedAdVideos,
   aIGeneratedAssets,
   creative,
-  creativeResolutionSizes,
-  displaySizes,
   perfomanceDriven,
+  sizesSMV,
+  soicalMediaSMV,
   soicalMediaVisual,
-  stockImageSizes,
-  visualLibrary,
 } from "../../constant/data";
 import ButtonWithIcon from "../../components/reusableComponents/ButtonWithIcon";
 import ImageUploader from "../../components/reusableComponents/uploadImage";
-import TextArea from "../../components/reusableComponents/textarea";
 import InputWithLabel from "../../components/reusableComponents/inputWithLabel";
 import SelectButton from "../../components/reusableComponents/selectButton";
-import AiGeneratedAdVediosResult from "../../components/aiGeneratedAdVediosResult";
+// import { Switch } from "@material-tailwind/react";
+import InputWithBg from "../../components/reusableComponents/inputWithBg";
 
 export default function PerfomanceDriven() {
   const [activeStep, setActiveStep] = useState(0);
   const [final, setFinal] = useState(false);
   const [backgroundImages, setBackgroundImages] = useState([]);
-  const [productShow, setProductShow] = useState(true);
-  const [sizesShow, setSizesShow] = useState(false);
-  const [aiShow, setAiShow] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
+    const [showGenerate, setShowGenerate] = useState(false);
+
   const [advanceShow, setAdvanceShow] = useState(false);
+  const [isSizes, setIsSizes] = useState(false);
   const [val, setVal] = useState("https://veriorinc.com/");
 
   const handleDelete = (index) => {
@@ -61,9 +46,6 @@ export default function PerfomanceDriven() {
     updated.splice(index, 1);
     setBackgroundImages(updated);
   };
-
-
-  
 
   return (
     <div>
@@ -135,7 +117,7 @@ export default function PerfomanceDriven() {
 
         {/* Main Content */}
         <div className="bg-[#1c1c2e] rounded-md p-2 w-full">
-          {perfomanceDriven[activeStep]?.id === "size" && (
+          {soicalMediaVisual[activeStep]?.id === "size" && (
             <>
               <div className="flex justify-between items-center p-2">
                 <div className="flex justify-center items-center gap-2">
@@ -145,76 +127,67 @@ export default function PerfomanceDriven() {
                       Select Creative Size
                     </h1>
                     <h5 className="text-gray-400 text-md">
-                     Choose the ideal ad size based on your target platform.
+                      Choose the ideal ad size based on your target platform.
                     </h5>
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                <div
-                  onClick={() => setSizesShow(true)}
-                  className={`h-[160px] rounded-md p-4 cursor-pointer transition-colors duration-300 flex justify-between items-center ${
-                    sizesShow
-                      ? "bg-gray-200 text-black"
-                      : "bg-[#2f2f3c] text-white"
-                  }`}
-                >
-                  <div className="flex flex-col gap-2">
-                    <img src={ProductVedio} alt="" className="w-12 h-12" />
-                    <h3 className="font-semibold text-[17px] leading-4">
-                      Start from Product Image
-                    </h3>
-                    <span className="text-[12px]">
-                      Upload a product image to let our AI handle the background
-                      ..
-                    </span>
-                  </div>
-                </div>
 
-                {/* Option 2 - Product Photoshoot */}
-                <div
-                  onClick={() => setSizesShow(false)}
-                  className={`h-[160px] rounded-md p-4 cursor-pointer transition-colors duration-300 flex justify-between items-center
-       ${!sizesShow ? "bg-gray-200 text-black" : "bg-[#2f2f3c] text-white"}
-      `}
-                >
-                  <div className="flex flex-col gap-2">
-                    <img src={ProductVedio2} alt="" className="w-12 h-12" />
-                    <h3 className="font-semibold text-[17px] leading-4">
-                      Start from Product Photoshoot
-                    </h3>
-                    <span className="text-[12px]">
-                      Upload your product photoshoot and let our AI turn it into
-                      a stunning video.
-                    </span>
+              <div className="flex justify-between flex-wrap items-center gap-2 mt-2">
+                <div className="flex items-center gap-2">
+                  <h2 className="text-gray-200 font-medium">
+                    Social Media Sizes
+                  </h2>
+                  <span className="text-gray-400 text-sm">
+                    Most common sizes for social media advertising.
+                  </span>
+                </div>
+                <div className="flex gap-3">
+                  <h5 className="text-white font-semibold text-[14px]">
+                    platforms
+                  </h5>
+                  <div
+                    onClick={() => setIsSizes(!isSizes)}
+                    className={`w-12 h-6 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer transition duration-300 ${
+                      isSizes ? "!bg-[#F35252]" : "!bg-[#2F2F3C]"
+                    }`}
+                  >
+                    <div
+                      className={`bg-white w-4 h-4 rounded-full shadow-md transform transition-transform duration-300 ${
+                        isSizes ? "translate-x-6" : "translate-x-0"
+                      }`}
+                    ></div>
                   </div>
+                  <h5 className="text-white font-semibold text-[14px]">
+                    Sizes
+                  </h5>
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-8">
-                {creativeResolutionSizes.map((val, idx) => (
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-4">
+                {(isSizes ? sizesSMV : soicalMediaSMV).map((val, idx) => (
                   <div
                     key={idx}
                     className={`${
                       idx === 0
                         ? "bg-white !text-black"
-                        : "text-white bg-[#2f2f3c] "
-                    }  h-[180px] hover:bg-gray-200 hover:text-black transition-colors duration-300  flex flex-col justify-center items-center rounded-md cursor-pointer`}
+                        : "text-white bg-[#2f2f3c]"
+                    } h-[180px] hover:bg-gray-200 hover:text-black transition-colors duration-300 flex flex-col justify-center items-center rounded-md cursor-pointer`}
                   >
-                    <img src={val.icon} alt="" className="w-14 h-12 " />
+                    <img src={val.icon} alt="" className="w-14 h-10" />
                     <h3 className="font-medium text-[14px]">{val.title}</h3>
                     <span className="text-[12px]">{val.size}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="flex justify-end items-end mt-60">
-                {visualLibrary[activeStep]?.id !== "style" && (
+              <div className="flex justify-end items-end mt-64">
+                {soicalMediaVisual[activeStep]?.id !== "text" && (
                   <button
                     className="bg-[#e75050] p-3 px-4 rounded-md text-white"
                     onClick={() => {
-                      const textIndex = visualLibrary.findIndex(
-                        (item) => item.id === "style"
+                      const textIndex = soicalMediaVisual.findIndex(
+                        (item) => item.id === "text"
                       );
                       setActiveStep(textIndex);
                     }}
@@ -226,26 +199,197 @@ export default function PerfomanceDriven() {
             </>
           )}
 
-          {perfomanceDriven[activeStep]?.id === "upload" && (
+          {soicalMediaVisual[activeStep]?.id === "text" && (
             <div className="p-2">
               <div className="flex justify-start items-center gap-2">
                 <img
-                  src={ProductPhotoActive}
+                  src={TextActiveIcon}
                   alt=""
                   className="w-16 h-16 p-1"
                 />
                 <div>
                   <h1 className="text-gray-200 text-2xl font-bold">
-                    Upload Product Photo
+Text on Image                  </h1>
+                  <h5 className="text-gray-400 text-md">
+Get smart text suggestions powered by AI, or craft your own message.                  </h5>
+                </div>
+              </div>
+
+             <div className="flex flex-col items-start mt-6   rounded-md !bg-[#2f2f3c]">
+                            <div className="flex items-center justify-between w-full  p-4 rounded-md">
+                              {/* Left: Icon + Text */}
+                              <div className="flex items-center gap-3">
+                                {/* Icon */}
+                                <div className="rounded-full bg-[#444450] w-12 h-12 flex items-center justify-center">
+                                  <img
+                                    src={SettingIcon}
+                                    alt="Settings"
+                                    className="w-6 h-6"
+                                  />
+                                </div>
+            
+                                {/* Text */}
+                                <div>
+                                  <h1 className="text-gray-200 text-lg font-semibold">
+                                    Generate texts with AI
+                                  </h1>
+                                  <p className="text-gray-400 text-sm">
+                                    Let our AI write conversion-focused text for your
+                                    images.
+                                  </p>
+                                </div>
+                              </div>
+            
+                              {/* Right: Arrow Button */}
+                              <button
+                                onClick={() => setShowGenerate((prev) => !prev)}
+                                className="w-5 h-5 flex items-center justify-center rounded-full cursor-pointer hover:bg-[#333346] transition"
+                              >
+                                <img
+                                  src={showGenerate ? ArrowUp : ArrowLeft}
+                                  alt="Toggle"
+                                  className="w-4 h-4"
+                                />
+                              </button>
+                            </div>
+            
+                            {showGenerate && (
+                              <>
+                                <div className=" mt-4 w-full rounded-md p-4 flex items-center gap-4">
+                                  <img src={WorldIcon} alt="" />
+                                  <h2 className="text-gray-300 font-bold text-nowrap">
+                                    Extract Data from Web
+                                  </h2>
+            
+                                  <div className="relative w-full">
+                                    <input
+                                      type="text"
+                                      id="website"
+                                      value={val}
+                                      onChange={(e) => setVal(e.target.value)}
+                                      onFocus={() => setIsFocused(true)}
+                                      onBlur={() => setIsFocused(false)}
+                                      className="peer bg-[#222230] rounded-md p-2 text-gray-400 outline-none px-2 py-3 w-full"
+                                    />
+            
+                                    <label
+                                      htmlFor="website"
+                                      className={`absolute left-2 px-1 text-gray-400 transition-all duration-200
+                      ${isFocused || val ? "top-[-10px] text-sm" : "top-3 text-base"}
+                    `}
+                                    >
+                                      Your Landing Page or Website
+                                    </label>
+                                  </div>
+            
+                                  <button className="bg-[#e75050] px-2 p-2 rounded-md text-nowrap text-white ">
+                                    Scan Website
+                                  </button>
+                                </div>
+            
+                                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full p-4">
+                                  <InputWithLabel
+                                    label="Your Main Headline Here"
+                                  />
+            
+                                  <InputWithLabel
+                                    label="Your Main Headline Here"
+                                  />
+            
+                                  <InputWithLabel
+                                    type="text"
+                                    style="p-2"
+                                    label="Your Main Headline Here"
+                                  />
+            
+                                  <div className="col-span-3">
+                                    <InputWithLabel
+                                      type="textarea"
+                                      style="p-2"
+                                      label="Your Description"
+                                      rows={4}
+                                    />
+                                  </div>
+                                  <div className="col-span-3">
+                                    <div className="grid grid-cols-2 gap-4 w-full">
+                                      <InputWithLabel
+                                        type="text"
+                                        style="p-2"
+                                        label="Your Main Headline Here"
+                                      />
+            
+                                      <InputWithLabel
+                                        type="text"
+                                        style="p-2"
+                                        label="Your Main Headline Here"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </>
+                            )}
+                          </div>
+            
+                          <div className="bg-[#2f2f3c] w-full p-4 mt-4">
+                            <h1 className="text-gray-200 text-xl">On Image Text</h1>
+                            <div className="mt-6 flex flex-col space-y-4">
+                              <InputWithLabel
+                                label="Your Main Headline Here"
+                              />
+            
+                              <InputWithLabel
+                                label="Your Punchline Here"
+                                // value={headline}
+                                // onChange={setHeadline}
+                              />
+            
+                              <InputWithLabel
+                                label="Call to Action text here"
+                                // value={headline}
+                                // onChange={setHeadline}
+                              />
+            
+                              <SelectButton
+                                style="py-4  px-4"
+                                buttonTitle="Call To Action"
+                                options={["call", "action", "msg"]}
+                              />
+                            </div>
+                            <div className="flex justify-end items-end mt-14">
+                              {creative[activeStep]?.id !== "background" && (
+                                <button
+                                  className="bg-[#e75050] p-3 px-4 rounded-md text-white"
+                                  onClick={() => {
+                                    const textIndex = creative.findIndex(
+                                      (item) => item.id === "background"
+                                    );
+                                    setActiveStep(textIndex);
+                                  }}
+                                >
+                                  Next
+                                </button>
+                              )}
+                            </div>
+                          </div>
+
+            </div>
+          )}
+
+          {perfomanceDriven[activeStep]?.id === "write" && (
+            <div>
+              <div className="flex justify-start items-center gap-2">
+                <img src={WriteActive} alt="" className="w-16 h-16 p-1" />
+                <div>
+                  <h1 className="text-gray-200 text-2xl font-bold">
+                    Write On Video Texts{" "}
                   </h1>
                   <h5 className="text-gray-400 text-md">
-                    Upload your product image for use in the generated videos.
+                    Generate high-converting copy with the power of AI.{" "}
                   </h5>
                 </div>
               </div>
 
-              <div>
-                <div className="mt-6">
+  <div className="mt-6">
                   <ImageUploader
                     style="bg-[#222230]"
                     images={backgroundImages}
@@ -271,165 +415,16 @@ export default function PerfomanceDriven() {
                     </div>
                   )}
                 </div>
-              </div>
-              <div className="flex justify-end items-end mt-26">
-                {visualLibrary[activeStep]?.id !== "describe" && (
-                  <button
-                    className="bg-[#e75050] p-3 px-4 rounded-md text-white"
-                    onClick={() => {
-                      const textIndex = visualLibrary.findIndex(
-                        (item) => item.id === "describe"
-                      );
-                      setActiveStep(textIndex);
-                    }}
-                  >
-                    Next
-                  </button>
-                )}
-              </div>
-            </div>
-          )}
 
-          {perfomanceDriven[activeStep]?.id === "write" && (
-            <div>
-              <div className="flex justify-start items-center gap-2">
-                <img src={WriteActive} alt="" className="w-16 h-16 p-1" />
-                <div>
-                  <h1 className="text-gray-200 text-2xl font-bold">
-                    Write On Video Texts{" "}
-                  </h1>
-                  <h5 className="text-gray-400 text-md">
-                    Generate high-converting copy with the power of AI.{" "}
-                  </h5>
-                </div>
-              </div>
 
-              <div className="bg-[#2F2F3C] w-full rounded-md p-6">
-                <TextArea
-                  placeholder="Type your message..."
-                  // value={text}
-                  // onChange={(e) => setText(e.target.value)}
-                  rows={6}
-                />
-                <input
-                  type="text"
-                  name=""
-                  placeholder="Call to Action Text here"
-                  id=""
-                  className="w-full px-2 py-3 mt-4 rounded-md outline-none bg-[#222230] text-gray-300"
-                />
-              </div>
 
-              <div className="bg-[#2F2F3C] rounded-md">
-                <div className="flex items-center justify-between w-full  p-4   mt-6">
-                  {/* Left: Icon + Text */}
-                  <div className="flex items-center gap-3">
-                    {/* Icon */}
-                    <div className="rounded-full bg-[#444450] w-12 h-12 flex items-center justify-center">
-                      <img
-                        src={SettingIcon}
-                        alt="Settings"
-                        className="w-6 h-6"
-                      />
-                    </div>
-
-                    {/* Text */}
-                    <div>
-                      <h1 className="text-gray-200 text-lg font-semibold">
-                        Advanced Options
-                      </h1>
-                      <p className="text-gray-400 text-sm">
-                        Provide details about your audience, call to action,
-                        tone, and any specific requests.
-                      </p>
-                    </div>
-                  </div>
-
-                  <button
-                    onClick={() => setAdvanceShow((prev) => !prev)}
-                    className="w-5 h-5 flex items-center justify-center rounded-full cursor-pointer hover:bg-[#333346] transition"
-                  >
-                    <img
-                      src={advanceShow ? ArrowUp : ArrowLeft}
-                      alt="Toggle"
-                      className="w-4 h-4"
-                    />
-                  </button>
-                </div>
-
-                {advanceShow && (
-                  <>
-                    <div className="w-full rounded-md bg-[#2F2F3C]">
-                      <div className="mt-4 w-full rounded-md p-4 flex items-center gap-4">
-                        <img src={WorldIcon} alt="" />
-                        <h2 className="text-gray-300 font-bold text-nowrap">
-                          Extract Data from Web
-                        </h2>
-
-                        <div className="relative w-full">
-                          <input
-                            type="text"
-                            id="website"
-                            value={val}
-                            onChange={(e) => setVal(e.target.value)}
-                            onFocus={() => setIsFocused(true)}
-                            onBlur={() => setIsFocused(false)}
-                            className="peer bg-[#222230] rounded-md p-2 text-gray-400 outline-none px-2 py-3 w-full"
-                          />
-
-                          <label
-                            htmlFor="website"
-                            className={`absolute left-2 px-1 text-gray-400 transition-all duration-200
-                        ${
-                          isFocused || val
-                            ? "top-[-10px] text-sm"
-                            : "top-3 text-base"
-                        }
-                      `}
-                          >
-                            Your Landing Page or Website
-                          </label>
-                        </div>
-
-                        <button className="bg-[#e75050] px-2 p-2 rounded-md text-nowrap text-white ">
-                          Scan Website
-                        </button>
-                      </div>
-
-                      <div className="grid grid-cols-2 p-3 gap-4">
-                        <SelectButton
-                          style="py-4 px-6"
-                          buttonTitle="Power Pack: All-in-one Ad Text Package"
-                          options={["call", "action", "msg"]}
-                        />
-                        <SelectButton
-                          icon={Pk}
-                          style="py-4 px-6 "
-                          buttonTitle="Pakistan"
-                          options={["call", "action", "msg"]}
-                        />
-
-                        <div className="col-span-2">
-                          <InputWithLabel
-                            label="Product/Service Description"
-                            // value={headline}
-                            // onChange={setHeadline}
-                          />
-                        </div>
-
-                        <div className="col-span-2">
-                          <TextArea
-                            placeholder="Enter Product Name"
-                            // value={text}
-                            // onChange={(e) => setText(e.target.value)}
-                            rows={6}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
+                <div className="mt-4">
+                               <InputWithBg
+                                              label="Enter Your Name"
+                                              placeholder="Enter Your Name"
+                                              InBg="bg-[#222230]"
+                                            />
+                            </div>
 
               <div className="flex justify-end items-end mt-14">
                 {activeStep < creative.length && (
@@ -472,7 +467,6 @@ export default function PerfomanceDriven() {
                 </div>
 
                 <div className="flex justify-center items-center gap-2">
-                 
                   <ButtonWithIcon
                     btnTitle="Edit All"
                     buttonIcon={Pen}
@@ -487,12 +481,38 @@ export default function PerfomanceDriven() {
                   />
                 </div>
               </div>
-   
-   <AiGeneratedAdVediosResult/>
-               
 
-
-
+            
+                          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            {aIGeneratedAssets.map((val, idx) => (
+                              <div
+                                key={idx}
+                                className="bg-[#2f2f3c] mt-5 rounded-lg overflow-hidden shadow-md"
+                              >
+                                <div className="h-[200px]">
+                                  <img
+                                    src={val}
+                                    alt={`Asset-${idx}`}
+                                    className="w-full h-full object-cover"
+                                  />
+                                </div>
+                                <div className="flex justify-between items-center px-4 py-3 bg-[#3a3a4a]">
+                                  <button className="px-3 py-2 rounded-md flex gap-3 text-sm items-center text-white">
+                                    <img src={Pen} alt="Edit" className="w-4" />
+                                    Edit
+                                  </button>
+                                  <button className="px-3 py-2 rounded-md flex gap-3 text-sm items-center text-white">
+                                    <img src={Download} alt="Edit" className="w-4" />
+                                    Download
+                                  </button>
+                                  <button className="px-3 py-2 rounded-md flex gap-3 text-sm items-center text-white">
+                                    <img src={Convert} alt="Edit" className="w-4" />
+                                    Convert
+                                  </button>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
             </div>
           )}
         </div>

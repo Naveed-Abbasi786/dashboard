@@ -4,7 +4,7 @@ import { Avatar, ButtonIcon, Search } from '../../assets'
 export default function Header({title,subTitle,btnTitle}) {
   return (
     <div>
-       <div className="flex justify-between items-center ">
+       <div className="flex  w-[93%]   justify-between items-center ">
               <div>
                 <h1 className="text-white text-2xl font-bold">{title}</h1>
                 <h5 className="text-gray-300 text-sm">

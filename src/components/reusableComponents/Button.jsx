@@ -10,7 +10,11 @@ export default function Button({ btnTitle, btnFn, active, style }) {
         px-4 py-3 rounded-md flex gap-2 text-sm justify-center items-center text-white
       `}
     >
-      {btnTitle || 'Click Me'}
+      {btnTitle&&(
+        <>
+        {btnTitle}
+        </>
+      )}
     </button>
   );
 }

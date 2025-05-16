@@ -1,6 +1,6 @@
 // components/ImageUploader.jsx
 import React from "react";
-import { ImportPicIcon } from "../../assets";
+import { ImportPicIcon, LibraryIcon } from "../../assets";
 import ButtonWithIcon from "./ButtonWithIcon";
 
 export default function ImageUploader({
@@ -61,13 +61,15 @@ export default function ImageUploader({
 
             <div className="!flex justify-center items-center gap-3 mt-2">
               <ButtonWithIcon
+               color='bg-[#2F2F3C] !flex-row-reverse'
                 btnTitle="Search Images"
                 buttonIcon={ImportPicIcon}
                 btnFn={() => console.log("Generate button clicked")}
               />
               <ButtonWithIcon
+               color='bg-[#2F2F3C] !flex-row-reverse'
                 btnTitle="your Library"
-                buttonIcon={ImportPicIcon}
+                buttonIcon={LibraryIcon}
                 btnFn={() => console.log("Generate button clicked")}
               />
             </div>

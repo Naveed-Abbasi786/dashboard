@@ -79,6 +79,22 @@ import {
   PortPr,
   StyoryPr,
   CreativeActive,
+  TwiterSMV,
+  LinkdinSMV,
+  FbInstaSMV,
+  MetaSMV,
+  PinSMV,
+  PinSizeSMV,
+  ProvideProjectActive,
+  ProvideProjectUnActive,
+  AdStrategyActive,
+  AdStrategyUnActive,
+  TextOnImageActive,
+  TextOnImageUnActive,
+  AdBgActive,
+  AdBgUnActive,
+  Others,
+  DirectConversion,
 } from "../assets";
 
 export const Icons = [
@@ -264,6 +280,13 @@ export const generateCards = [
     dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
     path: "/soical-media-visuals",
   },
+    {
+    banner: GenerateBanner,
+    titile: "Complete Advertising Bundle",
+    dis: "Verior is a dynamic and innovative brand focused on delivering cutting-edge solutions and services tailored to meet the diverse needs of its customers.",
+    path: "/complete-advertising",
+  },
+  
 ];
 
 export const insightCards = [
@@ -726,3 +749,94 @@ export const soicalMediaVisual = [
     id: "background",
   },
 ];
+
+
+export const soicalMediaSMV = [
+  { icon: TwiterSMV, title: "Square Video", size: "(1080x1080)" },
+  { icon: LinkdinSMV, title: "Landscape Video", size: "(1920x1080)" },
+  { icon: FbInstaSMV, title: "Portrait Video", size: "(160x600)" },
+  { icon: MetaSMV, title: "Story Video", size: "(1080x1920)" },
+  { icon: PinSMV, title: "Story Video", size: "(1080x1920)" },
+];
+
+
+export const sizesSMV = [
+  { icon: Post, title: "Post Size", size: "(1080x1080)" },
+  { icon: LandPR, title: "Landscape Size", size: "(1200x628)" },
+  { icon: StyoryPr, title: "Story Size", size: "(1080x1920)" },
+  { icon: PortPr, title: "Portrait Size", size: "(1080x1320)" },
+  { icon: PinSizeSMV, title: "Pin Size", size: "(1080x1320)" },
+];
+
+
+
+
+//Complete Advertising Bundle 
+
+
+
+export const completeAdvertisinigNav = [
+  {
+    activeIcon: CreativeActiveIcon,
+    unActiveIcon: CreativeActive,
+    title: "Select Creative Size",
+    id: "size",
+  },
+  {
+    activeIcon: ProvideProjectActive,
+    unActiveIcon: ProvideProjectUnActive,
+    title: "Provide Project Info",
+    id: "provide",
+  },
+  {
+    activeIcon: AdStrategyActive,
+    unActiveIcon: AdStrategyUnActive,
+    title: "Choose Ad Strategy",
+    id: "adStrategy",
+  },
+    {
+    activeIcon: AdBgActive,
+    unActiveIcon: AdBgUnActive,
+    title: "Ad Background Image",
+    id: "background",
+  },
+   {
+    activeIcon: TextOnImageActive,
+    unActiveIcon: TextOnImageUnActive,
+    title: "Text on Image",
+    id: "Image",
+  },
+ 
+];
+
+
+export const socialMediaCAB=[
+  {icon:MetaSMV,title:'Meta (Facebook & Instagram)',dis:'Leverage Metas vast reach and targeting for high VR trial conversions.'},
+  {icon:X,title:'twitter',dis:'Leverage Twitter s vast reach and engagement for VR free trials ideal for sparking interest but moderate in conversion.'},
+  {icon:LinkdinSMV,title:'Linkdin',dis:'Ideal for B2B leads; strong targeting but limited for broad VR adoption.'},
+  {icon:Ads,title:'Google (Facebook & Instagram)',dis:'Leverage Metas vast reach and targeting for high VR trial conversions.'},
+  {icon:PinSMV,title:'Pinterest',dis:'Engage visual audiences with immersive VR content; ideal for awareness, less so for direct conversions.'},
+  {icon:Others,title:'Other',dis:'If you plan to advertise on another platform, select this option.'},
+]
+
+
+export const creativeSizesCAB=[
+  {icon:Post,title:'Post',size:"(1080x1080)"},
+  {icon:Landscape,title:'Landscaps',size:"(1080x1080)"},
+  {icon:StyoryPr,title:'Story',size:"(1080x1080)"},
+  {icon:PortPr,title:'Portait',size:"(1080x1080)"},
+  {icon:Pin,title:'Pin',size:"(1080x1080)"},
+
+]
+
+
+
+
+export const aiRecommendationCAB=[
+  {icon:DirectConversion,title:'Direct Conversion Focused',dis:'Focus your ad strategy on solving real pain points while showcasing product value to boost direct conversions.'},
+  {icon:DirectConversion,title:'Free Consultation',dis:'Leverage Twitter s vast reach and engagement for VR free trials ideal for sparking interest but moderate in conversion.'},
+  {icon:DirectConversion,title:'Exclusive Discount',dis:'Ideal for B2B leads; strong targeting but limited for broad VR adoption.'},
+  {icon:DirectConversion,title:'Limited Time Offer',dis:'Leverage Metas vast reach and targeting for high VR trial conversions.'},
+  {icon:DirectConversion,title:'Free Trial Period',dis:'Engage visual audiences with immersive VR content; ideal for awareness, less so for direct conversions.'},
+  {icon:DirectConversion,title:'Free Trial Period',dis:'If you plan to advertise on another platform, select this option.'},
+]

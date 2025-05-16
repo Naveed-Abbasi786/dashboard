@@ -33,6 +33,8 @@ import deleteIcon from "../assets//img/icons/deleteIcon.svg";
 import editIcon from "../assets//img/icons/editIcon.svg";
 import adsIcon from "../assets//img/icons/adsIcon.svg";
 import linkdinIcon from "../assets//img/icons/linkdinIcon.svg";
+import libraryIcon from "../assets//img/icons/libraryIcon.svg";
+
 import metaIcon from "../assets//img/icons/metaIcon.svg";
 import pintrestIcon from "../assets//img/icons/pintrestIcon.svg";
 import generateBanner from "../assets/img/generateBanner.svg";
@@ -94,7 +96,7 @@ export const AiDriven2 = aiDriven2;
 export const Resolution = resolution;
 export const Option1 = option1;
 export const Option2 = option2;
-
+export const LibraryIcon=libraryIcon
 // VisualLibray
 import discribeUnActive from "../assets/img/icons/visualLibrary/discribeUnActive.svg";
 import discribeActive from "../assets/img/icons/visualLibrary/discribeActive.svg";
@@ -182,8 +184,6 @@ export const ProductVedioBl=productVedioBl
 export const ResolutionPR=resolutionPr
 export const WriteUnActive=writeUnActive
 export const WriteActive=writeActive
-
-
 
 
 
@@ -332,12 +332,49 @@ export const AiBg = aiBg;
 
 // Soical Media Visuals
 
-import socialMediaVisualIcon from '../assets/img/icons/generatePagesIcons/soicalMediaVisuals/socialMedia.svg'
-export const SocialMediaVisualIcon =socialMediaVisualIcon
+import SocialMediaVisualIcon from '../assets/img/icons/generatePagesIcons/soicalMediaVisuals/socialMedia.svg'
+import TwiterSMV from '../assets/img/icons/generatePagesIcons/soicalMediaVisuals/twiter.svg'
+import FbInstaSMV from '../assets/img/icons/generatePagesIcons/soicalMediaVisuals/fbInsta.svg'
+import MetaSMV from '../assets/img/icons/generatePagesIcons/soicalMediaVisuals/meta.svg'
+import PinSMV from '../assets/img/icons/generatePagesIcons/soicalMediaVisuals/pin.svg'
+import LinkdinSMV from '../assets/img/icons/generatePagesIcons/soicalMediaVisuals/linkdin.svg'
+import PinSizeSMV from '../assets/img/icons/generatePagesIcons/soicalMediaVisuals/pinSize.svg'
 
 
 
 
-// export {
-//     icon1 , icon2 dsakj s,d da,d as,dsa d,socialMediaVisualIcon,sa
-// }
+
+export {
+SocialMediaVisualIcon,TwiterSMV,FbInstaSMV,MetaSMV,PinSMV,LinkdinSMV,PinSizeSMV
+}
+
+
+
+// Complete Advertising Bundle
+import AdBgActive from '../assets/img/icons/generatePagesIcons/completeAdvertising/adBgActive.svg'
+import AdBgUnActive from '../assets/img/icons/generatePagesIcons/completeAdvertising/adBgUnActive.svg'
+import AdStrategyActive from '../assets/img/icons/generatePagesIcons/completeAdvertising/adStrategyActive.svg'
+import AdStrategyUnActive from '../assets/img/icons/generatePagesIcons/completeAdvertising/adStrategyUnActive.svg'
+import CompleteAd from '../assets/img/icons/generatePagesIcons/completeAdvertising/completeAd.svg'
+import Others from '../assets/img/icons/generatePagesIcons/completeAdvertising/others.svg'
+import ProvideProjectActive from '../assets/img/icons/generatePagesIcons/completeAdvertising/provideProjectActive.svg'
+import ProvideProjectUnActive from '../assets/img/icons/generatePagesIcons/completeAdvertising/provideProjectUnActive.svg'
+import TextOnImageActive from '../assets/img/icons/generatePagesIcons/completeAdvertising/textOnImageActive.svg'
+import TextOnImageUnActive from '../assets/img/icons/generatePagesIcons/completeAdvertising/textOnImageUnActive.svg'
+import DirectConversion from '../assets/img/icons/generatePagesIcons/completeAdvertising/directConversion.svg'
+import UploadIcon from '../assets/img/icons/generatePagesIcons/completeAdvertising/upload.svg'
+import DustbinCAB from '../assets/img/icons/generatePagesIcons/completeAdvertising/dustbin.svg'
+export{
+    AdBgActive,
+    AdBgUnActive,
+    AdStrategyActive,
+    AdStrategyUnActive,
+    CompleteAd,
+    Others,
+    ProvideProjectActive,
+    ProvideProjectUnActive,
+    TextOnImageActive,
+    TextOnImageUnActive,
+    DirectConversion,UploadIcon,DustbinCAB
+
+}

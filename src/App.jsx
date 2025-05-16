@@ -19,6 +19,7 @@ function App() {
   const CopyWriting = lazy(() => import("./pages/generatePages/CopyWriting"));
   const PerfomanceDriven = lazy(() => import("./pages/generatePages/PerfomanceDriven"));
   const SoicalMediaVisual = lazy(() => import("./pages/generatePages/SoicalMediaVisual"));
+  const CompleteAdvertising = lazy(() => import("./pages/generatePages/CompleteAdvertising"));
 
  
   const routes = [
@@ -35,7 +36,10 @@ function App() {
     { path: "/copy-writing", element: <CopyWriting /> },
     { path: "/perfomance-driven", element: <PerfomanceDriven /> },
     { path: "/soical-media-visuals", element: <SoicalMediaVisual /> },
+    { path: "/complete-advertising", element: <CompleteAdvertising /> },
 
+
+    
   ];
 
   const standaloneRoutes = [

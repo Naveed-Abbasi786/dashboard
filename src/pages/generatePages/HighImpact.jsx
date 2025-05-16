@@ -162,10 +162,10 @@ export default function HighImpact() {
                     <div
                       key={idx}
                       className={`${
-                        idx === 0
-                          ? "bg-gray-200 text-black"
-                          : "bg-[#2f2f3c] text-white"
-                      } h-[160px] hover:bg-gray-200 hover:text-black transition-colors duration-300 flex flex-col justify-center items-center rounded-md p-4 cursor-pointer`}
+                        idx === 2
+                          ? "bg-[#F35252]"
+                          : "bg-[#2f2f3c] "
+                      } h-[160px] hover:bg-[#F35252] text-white  transition-colors duration-300 flex flex-col justify-center items-center rounded-md p-4 cursor-pointer`}
                     >
                       <img src={val.icon} alt="" className="w-10 h-10 " />
                       <h3 className="font-medium text-[14px]">{val.title}</h3>
