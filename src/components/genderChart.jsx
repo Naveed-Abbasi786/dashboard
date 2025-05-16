@@ -25,17 +25,18 @@ const centerTextPlugin = {
 };
 
 const GenderChart = () => {
-  const data = {
-    labels: ["Male", "Female"],
-    datasets: [
-      {
-        data: [35, 15],
-        backgroundColor: ["#e75050", "#2c53c5"],
-        borderWidth: 0,
-        cutout: "70%",
-      },
-    ],
-  };
+ const data = {
+  labels: ["Male", "Female"],
+  datasets: [
+    {
+      data: [35, 15],
+      backgroundColor: ["#e75050", "#2c53c5"], // ✅ Strings as required
+      borderWidth: 0,
+      cutout: "70%",
+    },
+  ],
+};
+
 
   const options = {
     responsive: true,
